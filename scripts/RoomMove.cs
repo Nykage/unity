@@ -26,13 +26,14 @@ public class RoomMove : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
+            SoundManager.PlaySound("swoosh");
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
-            other.transform.position += playerChange;
+            collision.transform.position += playerChange;
             if (needText)
             {
                 StartCoroutine(placeNameCo());
