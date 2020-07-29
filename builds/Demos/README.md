@@ -34,7 +34,7 @@ Downloaded from a free sprite resource website.
 
 ## Version 3
 
-*This is the finished project!*
+**This is the finished project!**
 
 New key features include:
 - A breakable pot
@@ -45,6 +45,6 @@ New key features include:
 - Completely new map made with Unity's tilemap system
 - Some visual keys to guide the player
 
-*This demo includes a lot of fixes and tweaks and every single feature that I planned to make is inside.*
+**This demo includes a lot of fixes and tweaks and every single feature that I planned to make is inside.**
 
 Graphics are downloaded from a free sprite resource website and some are customized by myself.
