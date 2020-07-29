@@ -2,6 +2,8 @@
 
 All the necessary project management documents are in the root folder, the C# scripts are in the scripts folder and under builds and then in the folder Demos, you can find the different Versions of the game.
 
+The PowerPoint presentation and presentation text are to be found in the presentation folder.
+
 **Version 3 is the final version of the game!**
 
 ## The Game
