@@ -31,3 +31,20 @@ This demo includes following new features:
 
 Graphics are **not final**.
 Downloaded from a free sprite resource website.
+
+## Version 3
+
+*This is the finished project!*
+
+New key features include:
+- A breakable pot
+- More objects to interact with
+- A new kind of switch
+- Background music and new sound effects
+- A lot of bugfixes and tweaks
+- Completely new map made with Unity's tilemap system
+- Some visual keys to guide the player
+
+*This demo includes a lot of fixes and tweaks and every single feature that I planned to make is inside.*
+
+Graphics are downloaded from a free sprite resource website and some are customized by myself.

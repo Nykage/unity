@@ -6,6 +6,7 @@ public class MovingObject : MonoBehaviour
 {
 
     public bool playerInRange;
+    public bool canMove;
     public Collider2D collisionSite;
     public Rigidbody2D parentBody;
     private Vector3 change;
@@ -37,7 +38,7 @@ public class MovingObject : MonoBehaviour
                 {
                     change.x = Input.GetAxisRaw("Horizontal");
                 }
-                MoveObject();
+                MoveObject(0.02f);
             }
             else if (positive && x)
             {
@@ -49,7 +50,7 @@ public class MovingObject : MonoBehaviour
                 {
                     change.x = Input.GetAxisRaw("Horizontal");
                 }
-                MoveObject();
+                MoveObject(0.02f);
             }
             else if (negative && y)
             {
@@ -61,7 +62,7 @@ public class MovingObject : MonoBehaviour
                 {
                     change.y = Input.GetAxisRaw("Vertical");
                 }
-                MoveObject();
+                MoveObject(0.02f);
             }
             else if (positive && y)
             {
@@ -73,18 +74,21 @@ public class MovingObject : MonoBehaviour
                 {
                     change.y = Input.GetAxisRaw("Vertical");
                 }
-                MoveObject();
+                MoveObject(0.02f);
             }
         }
     }
 
-    void MoveObject()
+    void MoveObject(float currentDeltaTime)
     {
-        if (Input.GetButton("Interact"))
+        if (canMove)
         {
-            parentBody.MovePosition(
-                transform.position + change * speed * Time.deltaTime
-            );
+            if (Input.GetButton("Interact"))
+            {
+                parentBody.MovePosition(
+                    transform.position + change * speed * currentDeltaTime
+                );
+            }
         }
     }
 
